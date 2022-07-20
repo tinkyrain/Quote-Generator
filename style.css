@@ -27,7 +27,8 @@ section{
 /*Quote CSS*/
 
 .Quote-section__Quote{
-  margin-left: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
 
   font-size: 50px;
   font-family: 'Alegreya', serif;
@@ -73,4 +74,66 @@ section{
   color: white;
 
   transition: all 0.6s ease;
+}
+
+/*Adaptive*/
+
+@media (max-width: 990px) {
+  main{
+    flex-direction: column;
+  }
+
+  section{
+    height: auto;
+    width: 100%;
+  }
+
+  .Quote-section__Quote{
+    margin-top: 10%;
+  }
+
+  #button{
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 580px) {
+  .Quote-section__Quote{
+    font-size: 30px;
+  }
+
+  #button{
+    width: 250px;
+    height: 70px;
+
+    font-size: 25px;
+
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 390px) {
+  .Quote-section__Quote{
+    font-size: 25px;
+
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #button{
+    width: 200px;
+    height: 50px;
+
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 340px) {
+  .Quote-section__Quote{
+    font-size: 20px;
+  }
+
+  #button{
+    margin-top: 10%;
+  }
 }
