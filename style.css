@@ -6,6 +6,14 @@ body{
   background-color: white;
 }
 
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+
 main{
   width: 100%;
   height: 100%;
